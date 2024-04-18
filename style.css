@@ -7,6 +7,7 @@
     text-decoration: none;
 }
 
+
 header{
     position: fixed;
     width: 100%;
@@ -64,7 +65,7 @@ header{
 
 .nav-btn{
     font-size: 16px;
-    color: #212832;
+    color: #1e2442;
     font-weight: 500;
     border: 1.3px solid #212832;
     padding: 3px 12px;
@@ -74,8 +75,8 @@ header{
 }
 
 .nav-btn:hover{
-    background-color: #212832;
-    color: #fff;
+    background-color: #1e2442;
+    color: #dddddd;
 }
 
 #menu-icon{
@@ -84,4 +85,108 @@ header{
     z-index: 10001;
     cursor: pointer;
     display: none;
+}
+
+section{
+    padding: 60px 12%;
+}
+
+.home{
+    width: 100%;
+    height: 95vh;
+    background-image: url(background-img.jpg);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+
+.home-img img{
+    margin-top: 1.68rem;
+    margin-left: 3rem;
+    max-width: 100%;
+    width: 1000px;
+    height: auto;
+}
+
+.home-text h4{
+    color: #2D3250;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+.home-text h1{
+    color: #383d59;
+    font-size: 50px;
+    font-family: 'Volkhov';
+    font-weight: 700;
+    line-height: 51px;
+    letter-spacing: -0.04em;
+    margin-bottom: 18px;
+}
+
+.home-text p{
+    color: #575c7d;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+
+.button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn1{
+    font-size: 15px;
+    font-weight: 500;
+    font-style: normal;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 8px 18px;
+    background: #1e2442;
+    border-radius: 10px;
+    margin-right: 40px;
+    transition: all 0.3s;
+}
+
+.btn1:hover{
+    transform: translateY(-5px);
+}
+
+.btn2{
+    color: #505470;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn2 span i{
+    padding-left: 4.3px;
+    width: 43px;
+    height: 43px;
+    background-color: #2B2A4C;
+    color: #fff;
+    font-size: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0px 15px 30px rgba(43,42,76,0.3);
+    margin-right: 15px;
+    transition: all 0.3s;
+}
+
+.btn2 span i:hover{
+    opacity: 0.9;
+    transform: translateY(-4px);
 }
