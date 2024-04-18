@@ -7,7 +7,6 @@
     text-decoration: none;
 }
 
-
 header{
     position: fixed;
     width: 100%;
@@ -17,12 +16,13 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 22px 12%;
+    padding: 0px 8%;
+    padding-top: 2px;
 }
 
 .logo img{
     max-width: 100%;
-    width: 115px;
+    width: 100px;
     height: auto;
 }
 
@@ -93,21 +93,26 @@ section{
 
 .home{
     width: 100%;
-    height: 95vh;
+    height: 100vh;
     background-image: url(background-img.jpg);
     background-size: cover;
     background-position: center;
+    /* background-color: #B6BBC4; */
     display: grid;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
 }
 
 .home-img img{
-    margin-top: 1.68rem;
+    margin-top: 3.9rem;
     margin-left: 3rem;
     max-width: 100%;
     width: 1000px;
     height: auto;
+}
+
+.home-text{
+    margin-top: -2.9rem;
 }
 
 .home-text h4{
@@ -189,4 +194,79 @@ section{
 .btn2 span i:hover{
     opacity: 0.9;
     transform: translateY(-4px);
+}
+
+/* sticky header */
+
+header.sticky{
+    background-color: #EEEEEE;
+    box-shadow: 0px 4px 15px rgb(0 0 0 / 8%);
+    transition: 0.3s;
+}
+
+/* category */
+
+.category{
+    padding: 0;
+    margin-top: 2rem;
+}
+
+.center-text{
+    text-align: center;
+}
+
+.center-text h4{
+    font-size: 18px;
+    color: #5E6282;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 30px;
+}
+
+.center-text h2{
+    font-size: 50px;
+    color: #14183E;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-family: 'Volkhov';
+    margin-bottom: 70px;
+}
+
+.cate-pro{
+    padding: 0 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px,auto));
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.row{
+    padding: 40px 15px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+    transition: all 0.3s;
+}
+
+.row i{
+    color:#14183E;
+    font-size: 50px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.row h5{
+    font-size: 16px;
+    color: #1E1D4C;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.row p{
+    color: #5E6282;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.row:hover{
+    transform: translateY(-8px);
 }
