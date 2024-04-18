@@ -207,8 +207,8 @@ header.sticky{
 /* category */
 
 .category{
-    padding: 0;
     margin-top: 2rem;
+    padding: 0;
 }
 
 .center-text{
@@ -269,4 +269,90 @@ header.sticky{
 
 .row:hover{
     transform: translateY(-8px);
+}
+
+/* Destinations */
+
+.Destination{
+    margin-top: 4.5rem;
+    padding: 0;
+}
+
+.main-dest{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+    align-items: center;
+    padding: 0 30px;
+    gap: 1rem;
+}
+
+.hov-img img{
+    width: 280px;
+    height: 250px;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.Dest-text h5{
+    font-size: 18px;
+    color: #5E6282;
+    text-transform: capitalize;
+    font-weight: 600;
+    line-height: 25px;
+    text-align: center;
+}
+
+.Dest-text h2{
+    color: #14183E;
+    font-size: 50px;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-family: 'Volkhov';
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.box{
+    position: relative;
+}
+
+.box .text-in{
+    position: absolute;
+    bottom: 25px;
+    left: 20px;
+}
+
+.text-in h5{
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.text-in p{
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.coun-text{
+    position: absolute;
+    top: 25px;
+    left: 20px;
+}
+
+.box h6{
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.hov-img{
+    overflow: hidden;
+}
+
+.hov-img:hover img{
+    transform: scale(1.1);
+    filter: brightness(50%) hue-rotate(45deg);
 }
