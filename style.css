@@ -356,3 +356,88 @@ header.sticky{
     transform: scale(1.1);
     filter: brightness(50%) hue-rotate(45deg);
 }
+
+/* Testimonials */
+.test-text{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.left h4{
+    color: #5E6282;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+}
+
+.left h3{
+    font-size: 50px;
+    color: #14183E;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-family: 'Volkhov';
+}
+
+.right img{
+    max-width: 100%;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.right h5{
+    color: #5E6282;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-top: 3px;
+}
+
+.right h6{
+    color: #5E6282;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.right p{
+    color: #5E6282;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+/* Airlines */
+
+.air-office{
+    padding: 0;
+}
+
+.air-office{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.office-name{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px,auto));
+    gap: 3rem;
+    align-items: center;
+}
+
+.office-name img{
+    max-width: 100%;
+    width: 170px;
+    height: auto;
+    transition: all 0.3s;
+}
+
+.office-name img:hover{
+    transform: translateY(-6px);
+}
