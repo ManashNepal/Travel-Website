@@ -358,6 +358,11 @@ header.sticky{
 }
 
 /* Testimonials */
+
+.Testimonials{
+    margin-top: 2rem;
+}
+
 .test-text{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -441,3 +446,125 @@ header.sticky{
 .office-name img:hover{
     transform: translateY(-6px);
 }
+
+/* Footer */
+.contact{
+    padding: 0;
+    padding-top: 1rem;
+    background-color: #EEEEEE;
+}
+
+.contact-info{
+    padding-left: 10px;
+    padding-right: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(160px,auto));
+    gap: 2rem;
+    align-items: center;
+}
+
+.first-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.first-info img{
+    max-width: 100%;
+    width: 120px;
+    height: auto;
+}
+
+.first-info h6{
+    color: #3C3F55;
+    margin-top: 1px;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: default;
+    transition: all 0.3s;
+}
+
+.contact-info h4{
+    font-size: 18px;
+    color: #080809;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+
+.contact-info p{
+    color: #3C3F55;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: capitalize;
+    cursor: pointer;
+    margin-bottom: 6px;
+    transition: all 0.3s;
+}
+
+.contact-info p:hover{
+    color: #6A6F98;
+}
+
+.fifth-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.fifth-info .icon{
+    margin-left: 5px;
+}
+
+.fifth-info .icon a{
+    color: #000;
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #FFF;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 15px rgb(0 0 0 / 10%);
+    margin-right: 15px;
+    margin-bottom: 14px;
+    transition: all 0.3s;
+}
+
+.fifth-info .icon a:hover{
+    transform: scale(1.1);
+}
+
+.fifth-info h5{
+    color: #5E6282;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+    margin-left: 9px;
+    cursor: default;
+    transition: all 0.3s;
+}
+
+.img-info{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.img-info img{
+    height: auto;
+    cursor: pointer;
+}
+
+.end-text{
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.footer p{
+    color: #5E6282;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
