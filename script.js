@@ -95,11 +95,21 @@ iconElements.forEach(iconElement=>{
 // Toggle
 let menu = document.querySelector('#menu-icon');
 let navmenu = document.querySelector('.navmenu');
+let head = document.querySelector('header');
 
 menu.onclick = ()=>{
     menu.classList.toggle('bx-x');
     navmenu.classList.toggle('open');
 }
+
+const navLink = document.querySelectorAll(".nav__link");
+
+function linkAction(){
+    navmenu.classList.remove('open');
+    menu.classList.remove('bx-x');
+  }
+  
+  navLink.forEach(n => n.addEventListener("click",linkAction));
 
 
 

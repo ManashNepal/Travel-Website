@@ -161,7 +161,7 @@ section{
 }
 
 .btn2{
-    color: #505470;
+    color: #1e2442;
     font-size: 16px;
     font-weight: 600;
     text-transform: capitalize;
@@ -631,7 +631,7 @@ header.sticky{
         left: 0;
         right: 0;
         flex-direction: column;
-        background: #FFF1DA;
+        background: #EEEEEE;
         text-align: left;
         transition: all 0.3s;
     }
@@ -644,7 +644,7 @@ header.sticky{
     }
 
     .navmenu.open{
-        top: 100%;
+        top: 0;
     }
 }
 
@@ -673,5 +673,11 @@ header.sticky{
     .first-info img{
         width: 250px;
         padding-left: 85px;
+    }
+}
+
+@media(max-width: 915px){
+    .btn2{
+        color: #EEEEEE ;
     }
 }
