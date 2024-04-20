@@ -7,6 +7,10 @@
     text-decoration: none;
 }
 
+body, html{
+    scroll-padding-top: 80px;
+}
+
 header{
     position: fixed;
     width: 100%;
@@ -74,11 +78,6 @@ header{
     transition: all 0.3s;
 }
 
-.nav-btn:hover{
-    background-color: #1e2442;
-    color: #dddddd;
-}
-
 #menu-icon{
     font-size: 32px;
     color: #212832;
@@ -94,25 +93,25 @@ section{
 .home{
     width: 100%;
     height: 100vh;
-    background-image: url(background-img.jpg);
+    background-image: url(homepage.jpg);
     background-size: cover;
     background-position: center;
-    /* background-color: #B6BBC4; */
+    background-repeat: no-repeat;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
 }
 
 .home-img img{
-    margin-top: 3.9rem;
+    margin-top: 13%;
     margin-left: 3rem;
     max-width: 100%;
-    width: 1000px;
+    width: 510px;
     height: auto;
 }
 
 .home-text{
-    margin-top: -2.9rem;
+    margin-top: 2rem;
 }
 
 .home-text h4{
@@ -161,10 +160,6 @@ section{
     transition: all 0.3s;
 }
 
-.btn1:hover{
-    transform: translateY(-5px);
-}
-
 .btn2{
     color: #505470;
     font-size: 16px;
@@ -191,14 +186,11 @@ section{
     transition: all 0.3s;
 }
 
-.btn2 span i:hover{
-    opacity: 0.9;
-    transform: translateY(-4px);
-}
-
 /* sticky header */
 
 header.sticky{
+    padding-top: 5px;
+    padding-bottom: 0px;
     background-color: #EEEEEE;
     box-shadow: 0px 4px 15px rgb(0 0 0 / 8%);
     transition: 0.3s;
@@ -265,10 +257,6 @@ header.sticky{
     color: #5E6282;
     font-size: 12px;
     font-weight: 500;
-}
-
-.row:hover{
-    transform: translateY(-8px);
 }
 
 /* Destinations */
@@ -530,10 +518,6 @@ header.sticky{
     transition: all 0.3s;
 }
 
-.fifth-info .icon a:hover{
-    transform: scale(1.1);
-}
-
 .fifth-info h5{
     color: #5E6282;
     font-size: 16px;
@@ -568,3 +552,126 @@ header.sticky{
     font-weight: 500;
 }
 
+/* Media Queries */
+@media(max-width:1265px){
+    header{
+        padding: 25px 4%;
+        transition: 0.3s;
+    }
+    section{
+        padding: 60px 4%;
+        transition: 0.3s;
+    }
+}
+
+@media(max-width:1050px){
+    .home{
+        grid-template-columns: 1fr;
+        height: 100%;
+        transition: 0.3s;
+    }
+
+    .home-text{
+        padding-top: 100px;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .home-text img{
+        padding-top: 50px;
+        transition: 0.3s;
+    }
+}
+
+@media(max-width:1180px){
+    .home-text h1{
+        font-size: 56px;
+        transition: 0.3s;
+    }
+    .home-text h4{
+        font-size: 18px;
+        transition: 0.3s;
+    }
+    .home-text p{
+        font-size: 15px;
+        transition: 0.3s;
+    }
+}
+
+@media(max-width:415px){
+    .home-text h1{
+        font-size: 40px;
+        line-height: 50px;
+        transition: 0.3s;
+    }
+    .home-text p{
+        .home-text p{
+            font-size: 12px;
+            transition: 0.3s;
+        }
+    }
+}
+
+@media(max-width:1000px){
+    .test-text{
+        grid-template-columns: 1fr;
+        height: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+}
+
+@media(max-width:970px){
+    #menu-icon{
+        display: block;
+    }
+    .navmenu{
+        position: absolute;
+        top: -600px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background: #FFF1DA;
+        text-align: left;
+        transition: all 0.3s;
+    }
+
+    .navmenu a{
+        display: block;
+        padding: 16px;
+        margin: 8px;
+        border-left: 2px solid #212832;
+    }
+
+    .navmenu.open{
+        top: 100%;
+    }
+}
+
+@media(max-width:556px){
+    .hov-img img{
+        width: 100%;
+        height: auto;
+    } 
+}
+
+@media (min-width:641px) and (max-width:812px){
+    .hov-img img{
+        width: 100%;
+    }
+}
+
+@media(max-width:372px){
+    .contact{
+        padding-left: 10px;
+        align-items: center;
+        text-align: center;
+    }
+    .img-info{
+        padding-left: 60px;
+    }
+    .first-info img{
+        width: 250px;
+        padding-left: 85px;
+    }
+}
